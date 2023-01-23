@@ -1,0 +1,99 @@
+input {
+  background-color: bisque;
+  border: 0px;
+  border-bottom: 1px solid black;
+  outline: none;
+}
+body{
+    background-color: azure;
+}
+main{
+    display: flex;
+    justify-content: center;
+    padding-top: 5vh;
+    flex-direction: column;
+    align-items: center;
+}
+.spacing {
+  margin-top: 10px;
+}
+
+#clickButton{
+    display: flex;
+    justify-content: center;
+}
+
+#form {
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: rgb(251, 230, 204);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 350px;
+  max-width: 100%;
+  border-radius: 7%;
+}
+.disable {
+    cursor: not-allowed;
+  color: gray;
+}
+
+#name{
+    width: 85%;
+}
+#number{
+    width: 70%;
+}
+#email{
+    width: 86%;
+}
+#password{
+    width: 79.5%;
+}
+
+.labelClick{
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  visibility: hidden;
+  outline: none;
+}
+
+input[type="checkbox"] + label {
+  position: relative;
+  margin-left: 40px;
+  outline: none;
+}
+
+input[type="checkbox"] + label:after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  border: 1px solid;
+  left: -30px;
+}
+
+input[type="checkbox"] + label:before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 16px;
+  border: 2px solid green;
+  border-right: 0px;
+  border-top: 0px;
+  height: 8px;
+  transform: rotate(315deg);
+  top: 4px;
+  left: -26px;
+  visibility: hidden;
+}
+
+input[type="checkbox"]:checked + label:before {
+  visibility: visible;
+}
